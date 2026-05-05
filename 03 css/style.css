@@ -1,0 +1,30 @@
+body{
+    background-color: rgb(24, 23, 23);
+    color: darkgoldenrod;
+}
+output{
+     background-color: rgb(49, 49, 48);
+     color: rgb(228, 161, 17);
+     font-family: 'courier New'; 
+     font-size: larger;
+}
+
+button{
+   background-color: rgb(2, 2, 2);
+    color: rgb(173, 130, 19);
+    padding: 8px 16px; /* Aumentei um pouquinho o preenchimento para ele não ficar muito espremido */
+    border-radius: 5px;
+    border: none;
+    margin: 10px;
+    
+
+    cursor: pointer; /* Faz a setinha do mouse virar aquela "mãozinha" de clique */
+    transition: 0.3s; /* Faz qualquer mudança de cor acontecer de forma suave */
+
+  
+}
+/* Esse :hover significa "quando o mouse passar por cima" */
+button:hover {
+    background-color: rgb(49, 49, 48); /* Clareia um pouco o fundo, usando a mesma cor do seu 'output' */
+    color: darkgoldenrod; /* Deixa o texto mais brilhante */
+}
