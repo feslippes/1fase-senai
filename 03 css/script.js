@@ -1,8 +1,65 @@
+
+function deslocarParaEventos(){
+
+let estaGripado
+let tempoViagem
+
+
+
+
+
+
+}
+//==========================================================================================================================
+
+
+function mostrarDiasDaSemana(){
+  let numero, dia 
+
+  numero = Number(prompt("Digita o numero ai: "))
+  if(numero == 1){
+    dia = "domingo"
+  }else if(numero == 2){
+    dia = "segunda"
+  }else if(numero == 3){
+    dia = "terça"
+  }else if(numero == 4){
+    dia = "quarta"
+  }else if(numero == 5){
+    dia = "quinta"
+  }else if(numero == 6){
+    dia = "sexta"
+  }else if(numero == 7){
+    dia = "sabado"
+  }else{
+    dia = "Erro, dia não encontrado."
+  }
+  //saidas
+  document.getElementById('resultado').innerHTML = 'Dia escolhido'
+  
+
+  }
+
+//==========================================================================================================================
+
 function adivinharNumero(){
-  let numero = Math
+  let numero = Math.ceil(Math.random()*3)
+  //let numero = Math.random()
+  //console.log(numero);
+  //numero = numero * 10
+  //console.log(numero);
+  //numero = Math.ceil(numero)
+  //console.log(numero);
+
+  let chute = Number(prompt("Chuta ai: "))
+  if(chute == numero){
+    resposta.innerHTML = "Acertou!"
+  }else{
+    resposta.innerHTML = "ERROU!"
+  }
 }
 
-
+//==========================================================================================================================
 
 let resposta = document.getElementById('resultado')
 
@@ -19,19 +76,19 @@ function verificarIdade(){
     resposta.innerHTML = "voce é menor de idade"
   }
 }
-
+//==========================================================================================================================
 function recrutarMarujos(){
 //infos
 let idade
 let saberNada, temRecomendacao
 //entradas
-idade = (prompt("qual a sua idade?:"))
+idade = Number(prompt("qual a sua idade?:"))
 saberNadar = (prompt("voçê sabe nadar?:"))
 //saidas
 if (saberNadar === "sim" && idade > 16) {
     console.log("Aprovado para o navio!");
     
-} else if (saberNadar === "não" && temRecomendacao === true && idade >= 14) {
+} else if (saberNadar === "não" && temRecomendacao === "sim" && idade >= 14) {
     console.log("Aprovado sob recomendação. Monitorar nas primeiras viagens.");
     
 } else {
