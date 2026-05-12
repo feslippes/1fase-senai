@@ -1,9 +1,45 @@
 
-function deslocarParaEventos(){
+function calcularUber(){
+  //infos
+  let distancia, tempoSegundos
+  let tempoMinutos
+  const velocidade = 300000
+  //entradas
+distancia = Number(prompt("Distancia:"))
+  //processamentos
+tempoSegundos = distancia / velocidade
+  //saidas
+  resposta.innerHTML = '<br>Tempo: ' + tempoSegundos + 'segundo(s)'
+  // resposta.innerHTML = '<p>Tempo: ' + tempoSegundos + 'segundo(s)<p>'
+  //segunda etapa
+  if(tempoSegundos > 60){
+tempoMinutos = tempoSegundos / 60
+resposta.innerHTML += '<br>ou' + tempoMinutos + 'minuto(s)'
+}
+ if(tempoSegundos > 60){
+tempoHoras = tempoMinutos / 60
+resposta.innerHTML += '<br>ou' + tempoHoras + 'hora(s)'
+  }
+  if(tempoHoras > 24){
+     tempoDias = tempoHoras / 24
+     //...
+  }
+    //resto = 6.75 % 1
+}
 
-let estaGripado
-let tempoViagem
 
+
+
+function segurançaParaCrianças(){
+
+let criancasPequenas
+let velocidadeVento
+
+if(criancasPequenas === 0 && velocidadeVento >= 0.5){
+  console.log("a foi liberada");
+}else{
+  console.log("a não foi liberada");
+}
 
 
 
