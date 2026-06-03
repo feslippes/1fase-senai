@@ -1,0 +1,19 @@
+body{
+    background-color:rgb(26, 23, 23)
+}
+h1{
+  color:rgb(223, 155, 53)
+}
+h2{
+    color: rgb(223, 155, 53);
+}
+button{
+    background-color: rgb(41, 40, 40);
+    color:rgb(223, 155, 53)
+}
+hr {
+    border: none;               /* 1. Removemos a borda padrão esbranquiçada do navegador */
+    height: 2px;                /* 2. Definimos a espessura da linha */
+    background-color: #ff9000;  /* 3. Escolhemos a nova cor de fundo da linha (ex: laranja) */
+    margin-bottom: 30px;        /* Mantém o espaçamento que você já tinha */
+}

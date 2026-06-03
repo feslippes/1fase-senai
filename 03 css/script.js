@@ -36,11 +36,11 @@ let criancasPequenas
 let velocidadeVento
 
 if(criancasPequenas === 0 && velocidadeVento >= 0.5){
-  console.log("a foi liberada");
+  console.log("Fumaça liberada. Que comecem os mistérios!");
 }else{
   console.log("a não foi liberada");
 }
-
+document.getElementById('resultado').innerHTML = ''
 
 
 
@@ -71,7 +71,7 @@ function mostrarDiasDaSemana(){
     dia = "Erro, dia não encontrado."
   }
   //saidas
-  document.getElementById('resultado').innerHTML = 'Dia escolhido'
+  document.getElementById('resultado').innerHTML = 'Dia escolhido: ' + dia
   
 
   }
@@ -161,6 +161,26 @@ function calcularVariaveis(){
 }
 //=========================================================================================================================
 function calcularChances(){
+
+    // alert("Aqui vou calcular as chances das criancinhas...")
+
+    document.getElementById("resultado").innerHTML = "Resultado das chances..."
+}
+
+function calcularPrecoBrique(){
+    // INFOS
+    let precoCompra, precoVenda
+    // LEITURAS 
+    precoCompra = Number(prompt("Preço de compra:"))
+    // PROCESSAMENTO
+    precoVenda = precoCompra * 3
+    // SAIDAS
+    // console.log("Preço para venda: R$" + precoVenda.toFixed(2));
+    // alert("Preço para venda: R$" + precoVenda.toFixed(2));
+
+    document.getElementById("resultado").innerHTML = "Preço para venda: R$" + precoVenda.toFixed(2)
+
+
 
 }
 //=========================================================================================================================

@@ -1,0 +1,40 @@
+/* Estilo geral da página */
+body {
+    background-color: #e0e0e0; /* Cinza claro para o fundo */
+    color: #212121;            /* Texto em cinza muito escuro para contraste */
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+/* Estilização para inputs de texto */
+input[type="text"], input[type="number"] {
+    background-color: #757575; /* Cinza escuro para os campos de entrada */
+    color: #ffffff;            /* Texto branco dentro do input */
+    border: 1px solid #424242;
+    padding: 6px 10px;
+    border-radius: 4px;
+}
+
+/* Estilização para todos os botões da interface */
+button, input[type="button"], input[type="submit"] {
+    background-color: #424242; /* Cinza ainda mais escuro para os botões */
+    color: #ffffff;            /* Texto branco para leitura fácil */
+    border: none;
+    padding: 6px 12px;
+    margin: 2px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+/* Efeito ao passar o mouse por cima dos botões */
+button:hover, input[type="button"]:hover, input[type="submit"]:hover {
+    background-color: #212121; /* Escurece um pouco mais ao passar o mouse */
+}
+
+/* Linhas horizontais */
+hr {
+    border: 0;
+    border-top: 1px solid #9e9e9e;
+    margin: 20px 0;
+}

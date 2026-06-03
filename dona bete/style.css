@@ -1,0 +1,138 @@
+/* Configuração Geral e Fundo */
+body {
+    background-color: #121214; /* Cinza quase preto, bem confortável */
+    color: #e1e1e6;            /* Texto claro, mas não puramente branco */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Container Principal */
+.app-container {
+    background-color: #1d1d22; /* Um tom um pouco mais claro que o fundo */
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    width: 100%;
+}
+
+/* Cabeçalho */
+header h1 {
+    color: #9871ff; /* Roxo vibrante para dar destaque */
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    color: #7c7c8a; /* Texto secundário mais discreto */
+    font-style: italic;
+}
+
+/* Seção do Placar */
+.placar-section {
+    background-color: #29292e;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    margin: 1.5rem 0;
+    border: 1px solid #323238;
+}
+
+.label {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #a8a8b3;
+}
+
+.valor-total {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #04d361; /* Verde neon para o total acumulado */
+    margin: 0.5rem 0;
+}
+
+.mensagem {
+    color: #ffcd1e; /* Amarelo ouro para as mensagens de rolagem */
+    font-weight: 500;
+}
+
+/* Grid de Botões dos Dados */
+.dados-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Organiza em 3 colunas limpas */
+    gap: 10px;
+    margin-bottom: 1.5rem;
+}
+
+/* Estilo dos Botões de Dados */
+.btn-dado {
+    background-color: #9871ff;
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.btn-dado:hover {
+    background-color: #8257e5; /* Roxo mais escuro no hover */
+}
+
+.btn-dado:active {
+    transform: scale(0.95); /* Efeito de clique */
+}
+
+/* Controles (Botão de Reset) */
+.controles {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.btn-secundario {
+    background-color: transparent;
+    color: #f75a68; /* Vermelho suave */
+    border: 1px solid #f75a68;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    width: 100%;
+    transition: all 0.2s;
+}
+
+.btn-secundario:hover {
+    background-color: #f75a68;
+    color: #ffffff;
+}
+
+/* Histórico de Rolagens */
+.historico-container h3 {
+    border-bottom: 1px solid #323238;
+    padding-bottom: 0.5rem;
+    color: #e1e1e6;
+}
+
+#lista-historico {
+    list-style: none;
+    padding: 0;
+    max-height: 200px;
+    overflow-y: auto; /* Adiciona scroll se passar de 8 itens */
+}
+
+#lista-historico li {
+    background-color: #202024;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-left: 4px solid #9871ff; /* Detalhe roxo na lateral de cada item */
+}
